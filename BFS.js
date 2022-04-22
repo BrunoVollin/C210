@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 let Grafo = () => {
   let vertices = [];
   let inserirAresta = (origem, destino) => {
@@ -41,7 +43,14 @@ let BFS = (grafo, s) => {
 
 let grafo = Grafo();
 
-var input = require("fs").readFileSync(__dirname + "/dev/stdin/input.txt", "utf8");
+// var input = require("fs").readFileSync(__dirname + "/dev/stdin/input.txt", "utf8");
+
+
+const input = fs.readFileSync('dev/stdin/input.txt', 'utf8')
+
+
+console.log(input);
+
 var lines = input.split("\r").join("").split("\n");
 
 let s = parseInt(lines.shift());
