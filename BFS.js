@@ -43,9 +43,7 @@ let BFS = (grafo, s) => {
 let grafo = Grafo();
 const input = fs.readFileSync('dev/stdin/input.txt', 'utf8')
 console.log(input);
-
 var lines = input.split("\r").join("").split("\n");
-
 let s = parseInt(lines.shift());
 
 let line = lines.shift();

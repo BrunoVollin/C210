@@ -1,6 +1,8 @@
 // Como o grafo do exemplo é direcionado
 // eu preciso garantir que todo vertice[v] é um array
 // para poder usar grafo.getArestas(v).forEach
+const fs = require('fs')
+
 let Grafo = () => {
   let vertices = [];
   let inicializa = (N) => {
@@ -42,11 +44,9 @@ let DFS = (grafo, s) => {
   }
 };
 
-////// leitura e processamento
-
 let grafo = Grafo();
-
-var input = require("fs").readFileSync(__dirname + "/dev/stdin/input.txt", "utf8");
+const input = fs.readFileSync('dev/stdin/input2.txt', 'utf8')
+console.log(input);
 var lines = input.split("\r").join("").split("\n");
 
 let letraParaNumero = (c) => c.charCodeAt(0) - 65;
