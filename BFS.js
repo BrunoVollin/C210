@@ -39,16 +39,9 @@ let BFS = (grafo, s) => {
   return { pai, dist };
 };
 
-////// leitura e processamento
 
 let grafo = Grafo();
-
-// var input = require("fs").readFileSync(__dirname + "/dev/stdin/input.txt", "utf8");
-
-
 const input = fs.readFileSync('dev/stdin/input.txt', 'utf8')
-
-
 console.log(input);
 
 var lines = input.split("\r").join("").split("\n");
